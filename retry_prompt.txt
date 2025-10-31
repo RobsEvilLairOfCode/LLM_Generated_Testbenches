@@ -1,0 +1,3 @@
+The provided test-bench doesn't cover all the possible transitions according to the client's specifications for the register "<state_reg_name>". Here is a list of the transitions that were expected but didn't happen:
+<expected_transitions>
+Please consider the RTL Verilog code provided while providing the testbench and combine the test cases from the above response. If there is a reset signal, try resetting in every possible state

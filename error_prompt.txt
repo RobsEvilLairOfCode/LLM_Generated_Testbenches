@@ -1,0 +1,4 @@
+The provided testbench when ran with IcarusVerilog 12.0, resulted in an error and the execution did not complete. Here is there error:
+<error>
+
+Please provide code for a revised testbench. Keep in mind some functionality of commercial tools are not supported in IcarusVerilog.

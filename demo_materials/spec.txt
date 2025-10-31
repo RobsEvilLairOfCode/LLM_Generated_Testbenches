@@ -1,0 +1,22 @@
+Note: any text outside of the tags are ignored by the program. It is safe to comment here.
+detailed description of the states. it might be helpful to put the state hexadecimal id next to its name
+<specification>
+This finite state machine has the inputs of an input signal, a clock signal, and a reset signal. The signal can be anything the user desires. The clock input can be a clock signal of any period. The reset signal will reset the state of the machine when it has a positive edge. There is one output. The Finite State Machine has three states. The first state (0x0) is an idle state where the output is directly set the input. The second state (0x1) is a "force low" state where the output is forced low regard less of the input. The third and final state (0x2) is a "force high" state where the output is forced high regardless of the input. A state transition happens every time a positive clock edge occurs. The transitions will go in the order mentioned previously. The force high state will transition to the idle state.
+</specification>
+
+short list of the states in form "<state hex id>:<name>" 
+<state_list>
+0x0:idle,
+0x1:force low,
+0x2:force high
+</state_list>
+
+a comma separated list of blacklisted states in hex id. These are states that cannot be entered in any circumstance. Ensure they are all listed.
+<blacklisted_states>
+0x3
+</blacklisted_states>
+
+a comma separated list of blacklisted transitions in form " <from> -> <to> ". These transitions should not occur in any circumstance. Ensure they are listed.
+<blacklisted_transitions>
+0x2->0x1, 0x0->0x2
+</blacklisted_transitions>
