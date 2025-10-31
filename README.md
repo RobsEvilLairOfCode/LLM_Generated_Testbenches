@@ -3,6 +3,12 @@
 # Overview
 This project is a python implementation of a methodology for generating finite state machine Verilog testbenches using an LLM. When supplied with the design file and design specification, the program will utilize an LLM (ChatGPT-5-mini by default) to generate and iteratively refine a testbench until it is able to cover all possible states and state transitions.
 
+# Requirements
+* Linux/WSL2 
+* Python 3.12
+* OpenAI python package
+* OpenAI key stored in "OpenAI_Key.txt" in main project directory
+
 # How to use
 In order to operate, start.py must be called with the Verilog design file and specification text file
 ```bash 
